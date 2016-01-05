@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="jlap">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../bower_components/fullcalendar/dist/fullcalendar.css"/>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css"/>
+  </head>
+  <body ng-controller="test as t">
+    <div ui-calendar="uiConfig.calendar" ng-model="eventSources"></div>
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../bower_components/moment/min/moment.min.js"></script>
+    <script type="text/javascript" src="../bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="../bower_components/angular-ui-calendar/src/calendar.js"></script>
+    <script type="text/javascript" src="../bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="../bower_components/fullcalendar/dist/gcal.js"></script>
+    <script type="text/javascript" src="../bower_components/angular-animate/angular-animate.min.js"></script>
+    <script type="text/javascript" src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+
+    <script type="text/ng-template" id="eventEditor.html">
+      <div class="modal-header">
+        <h3 class="modal-title">이벤트 등록/수정</h3>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <select class="form-control">
+                <option>GRC Throphy Offrod</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
+          <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+        </div>
+      </script>
+    </body>
+  </html>
