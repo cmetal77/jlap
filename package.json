@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/cmetal77/jlap/issues"
   },
-  "homepage": "https://github.com/cmetal77/jlap#readme"
+  "homepage": "https://github.com/cmetal77/jlap#readme",
+  "dependencies": {
+    "ramda": "^0.19.1"
+  }
 }
